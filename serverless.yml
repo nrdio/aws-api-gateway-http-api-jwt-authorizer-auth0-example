@@ -33,9 +33,9 @@ provider:
     authorizers:
       AuthJwtAuthorizer:
         identitySource: $request.header.Authorization
-        issuerUrl: https://raw.githubusercontent.com/nrdio/authn/master/
+        issuerUrl: <Your Auth0 Issuer URL>
         audience:
-          - https://my-aws-api-gateway.com
+          - <Your Auth0 API Indentifier>
 
 functions:
   createAccount:
@@ -98,7 +98,3 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: ${self:custom.accountTableName}
-
-plugins:
-  - serverless-dynamodb-local
-  - serverless-offline

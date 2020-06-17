@@ -1,4 +1,4 @@
-# Example project demonstrating usage of Serverless framework for creating a CRUD Rest API using API gateway, Lambda with Node.js 8.10 runtime and Dynamodb for persistence
+# Example project to demonstrate usage AWS API Gateway HTTP API for exposing Serverless REST API and securing API using JWT Authorizer, Auth0 and JWT Token
 
 Serverless framework provides consistent packaging and deployment experience across cloud providers. It provides an abstraction on top of cloud vendor settings and configurations. This makes it easier to focus on actual functions instead of cloud specific configurations, packaging and deployments. Under the hood serverless framework uses cloudformation for creating stack on AWS.          
 
